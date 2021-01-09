@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.example.serviapp.ui.main.MainViewModel" />
+    </data>
+
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <TextView
+        android:id="@+id/wifiTextview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/design_default_color_background"
+        android:gravity="center"
+        android:text="Wifi turned on"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/_50sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/guideline"
+        layout="@layout/guideline" />
+
+    <TextView
+        android:id="@+id/bluetoothTextview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Bluetooh turned on"
+        android:textColor="@color/material_on_surface_emphasis_high_type"
+        android:textSize="@dimen/_50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--
+</layout>-->
